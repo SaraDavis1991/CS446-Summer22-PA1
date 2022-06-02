@@ -29,7 +29,7 @@ _chmod_ is the command, _u+x _is an argument and <filename> is an argument. Not 
 5) Pass any parameters from the shell to the OS command function.<br/>
 6) Execute the command (with applicable parameters).<br/>
 
-
+**General Directions** <br/>
 In this part of the assignment, you will write a function called _launchProcesses_ in the **C language**. Main() will parse your command line arguments (such as _ls_), and then pass them to _launchProcesses_.
 
 The purpose of this portion of the assignment is to show you how Unix processes system calls from the command line using fork, wait, and execvp.
