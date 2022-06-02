@@ -1,6 +1,6 @@
 # CS446-Summer22-PA1
-
-# Part 1, the Process API
+**
+ Part 1, the Process API**
 
 In this part of the assignment, you will write a function called _launchProcesses_ in the **C language**. Main() will parse your command line arguments (such as _ls_), and then pass them to _launchProcesses_ 
 launchProcesses.
