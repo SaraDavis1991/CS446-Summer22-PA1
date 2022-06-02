@@ -8,6 +8,28 @@
 
 
 **<p align = "center"> Part 1, the Process API</p>**
+ **Background**
+ Normally, when you log in, the OS will create a user process that binds to the login port; this causes the user process at that port to execute a shell. A shell (command line interpreter) allows the user to interact with the OS and the OS to respond to the user. The shell is a character-oriented interface that allows users to type characters terminated by Enter (the \n char). The OS will respond by sending characters back to the screen. If the OS is using a GUI, the window manager software will take over any shell tasks, and the user can access them by using a screen display with a fixed number of characters and lines. We commonly call this display your terminal, shell, or console, and in Linux, it will output a prompt, which is usually your user@machineName followed by the terminal’s current place in the file system and then a $ (see Figure 2).  
+
+ 
+
+Common commands in Linux use bash, and usually take on the form of<br/>
+
+command argument1 ... argumentN
+
+For example, in
+
+chmod u+x <filename>
+
+chmod is the command, u+x is an argument and <filename> is an argument. Not all commands require arguments- for example, you can run ls with and without any arguments. After entering a command at the prompt, the shell creates a child process to execute whatever command you provided. The following are the steps that the shell must take to be functional: 
+
+Print a prompt and wait for input. <br/>
+Get the command line input.<br/>
+Parse the command line input.<br/>
+Find associated files.<br/>
+Pass any parameters from the shell to the OS command function.<br/>
+Execute the command (with applicable parameters).<br/>
+
 
 In this part of the assignment, you will write a function called _launchProcesses_ in the **C language**. Main() will parse your command line arguments (such as _ls_), and then pass them to _launchProcesses_.
 
