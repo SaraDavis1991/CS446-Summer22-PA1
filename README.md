@@ -8,7 +8,7 @@
 
 
 **<p align = "center"> Part 1, the Process API</p>**
- **Background**
+ **Background** <br/>
  Normally, when you log in, the OS will create a user process that binds to the login port; this causes the user process at that port to execute a shell. A shell (command line interpreter) allows the user to interact with the OS and the OS to respond to the user. The shell is a character-oriented interface that allows users to type characters terminated by Enter (the \n char). The OS will respond by sending characters back to the screen. If the OS is using a GUI, the window manager software will take over any shell tasks, and the user can access them by using a screen display with a fixed number of characters and lines. We commonly call this display your terminal, shell, or console, and in Linux, it will output a prompt, which is usually your user@machineName followed by the terminal’s current place in the file system and then a $ (see Figure 2).  
 
  
