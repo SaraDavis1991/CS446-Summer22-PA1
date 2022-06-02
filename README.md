@@ -78,7 +78,7 @@ If the process successfully executes and forks without error, return 0. Otherwis
 
 Hint: execvp returns -1 if it wasn't successful. <br/>
 
- **<p = "center"> Part 2, Process Scheduling</p>**<br/>
+ **<p align = "center"> Part 2, Process Scheduling</p>**<br/>
 **Background**
 
 Process scheduling algorithms come in many different variations, and they have many different tradeoffs to consider like resource sharing and simplicity of execution. 
