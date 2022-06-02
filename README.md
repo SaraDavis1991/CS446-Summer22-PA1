@@ -2,9 +2,9 @@
 
 **General Instructions and Hints**: 
 
-*Name files exactly as described in the documentation below. 
-*When parts 1 and 2 are done, zip or tarball the specified files into a folder with the name <netid>_CS446_PA1.zip or  <netid>_CS446_PA1.tar.gz (for example sarad_CS446_PA1.tar.gz).
-*All work should be done on a machine where you have sudoer permission.
+-Name files exactly as described in the documentation below.<br/> 
+-When parts 1 and 2 are done, zip or tarball the specified files into a folder with the name <netid>_CS446_PA1.zip or  <netid>_CS446_PA1.tar.gz (for example sarad_CS446_PA1.tar.gz).<br/>
+-All work should be done on a machine where you have sudoer permission. <br/>
 
 
 **<p align = "center"> Part 1, the Process API</p>**
