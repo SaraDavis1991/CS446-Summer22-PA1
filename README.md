@@ -74,7 +74,7 @@ The return from execvp ((https://linux.die.net/man/3/execvp)) should be stored t
 Finally, after checking for errors, wait (https://linux.die.net/man/3/wait) should be used to wait for the process executed by execvp ((https://linux.die.net/man/3/execvp)) to finish before the parent process can move on.
 If the process successfully executes and forks without error, return 0. Otherwise return 1. <br/>
 
-**Edge Cases:** If a process is not successfully forked, your function should print ``fork failed!"
+**Edge Cases:** If a process is not successfully forked, your function should print _fork failed!_
 
 Hint: execvp returns -1 if it wasn't successful. <br/>
 
