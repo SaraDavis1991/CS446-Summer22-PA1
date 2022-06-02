@@ -1,8 +1,15 @@
 **<p align = "center"> CS446-Summer22-PA1</p>**
+
+**General Instructions and Hints**: 
+
+*Name files exactly as described in the documentation below. 
+*When parts 1 and 2 are done, zip or tarball the specified files into a folder with the name <netid>_CS446_PA1.zip or  <netid>_CS446_PA1.tar.gz (for example sarad_CS446_PA1.tar.gz).
+*All work should be done on a machine where you have sudoer permission.
+
+
 **<p align = "center"> Part 1, the Process API</p>**
 
-In this part of the assignment, you will write a function called _launchProcesses_ in the **C language**. Main() will parse your command line arguments (such as _ls_), and then pass them to _launchProcesses_ 
-launchProcesses.
+In this part of the assignment, you will write a function called _launchProcesses_ in the **C language**. Main() will parse your command line arguments (such as _ls_), and then pass them to _launchProcesses_.
 
 The purpose of this portion of the assignment is to show you how Unix processes system calls from the command line using fork, wait, and execvp.
 In other words, I'm asking you to write a very stripped down process API. Here's a pretty good resource if you're [stuck](https://www.section.io/engineering-education/fork-in-c-programming-language/) <br/>
