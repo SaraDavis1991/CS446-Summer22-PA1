@@ -1,4 +1,4 @@
-_<p align = "center"> CS446-Summer22-PA1</p>
+**<p align = "center"> CS446-Summer22-PA1</p>**
 **<p align = "center"> Part 1, the Process API</p>**
 
 In this part of the assignment, you will write a function called _launchProcesses_ in the **C language**. Main() will parse your command line arguments (such as _ls_), and then pass them to _launchProcesses_ 
