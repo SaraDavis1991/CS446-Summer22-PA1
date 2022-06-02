@@ -1,5 +1,5 @@
-# CS446-Summer22-PA1
-**Part 1, the Process API**
+<p align = "center"># CS446-Summer22-PA1</p>
+<p align = "center"> **Part 1, the Process API**</p>
 
 In this part of the assignment, you will write a function called _launchProcesses_ in the **C language**. Main() will parse your command line arguments (such as _ls_), and then pass them to _launchProcesses_ 
 launchProcesses.
@@ -50,7 +50,7 @@ If the process successfully executes and forks without error, return 0. Otherwis
 
 Hint: execvp returns -1 if it wasn't successful. <br/>
 
-# Part 2, Process Scheduling
+<p = "center"># Part 2, Process Scheduling</b>
 **Background**
 
 Process scheduling algorithms come in many different variations, and they have many different tradeoffs to consider like resource sharing and simplicity of execution. 
