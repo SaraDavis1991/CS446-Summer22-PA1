@@ -18,17 +18,16 @@ Common commands in Linux use bash, and usually take on the form of<br/>
 command argument1 ... argumentN
 
 For example, in
+_chmod u+x <filename>_
 
-chmod u+x <filename>
+_chmod_ is the command, _u+x _is an argument and <filename> is an argument. Not all commands require arguments- for example, you can run ls with and without any arguments. After entering a command at the prompt, the shell creates a child process to execute whatever command you provided. The following are the steps that the shell must take to be functional: 
 
-chmod is the command, u+x is an argument and <filename> is an argument. Not all commands require arguments- for example, you can run ls with and without any arguments. After entering a command at the prompt, the shell creates a child process to execute whatever command you provided. The following are the steps that the shell must take to be functional: 
-
-Print a prompt and wait for input. <br/>
-Get the command line input.<br/>
-Parse the command line input.<br/>
-Find associated files.<br/>
-Pass any parameters from the shell to the OS command function.<br/>
-Execute the command (with applicable parameters).<br/>
+1) Print a prompt and wait for input. <br/>
+2) Get the command line input.<br/>
+3) Parse the command line input.<br/>
+4) Find associated files.<br/>
+5) Pass any parameters from the shell to the OS command function.<br/>
+6) Execute the command (with applicable parameters).<br/>
 
 
 In this part of the assignment, you will write a function called _launchProcesses_ in the **C language**. Main() will parse your command line arguments (such as _ls_), and then pass them to _launchProcesses_.
