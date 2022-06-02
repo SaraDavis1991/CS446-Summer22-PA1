@@ -20,23 +20,23 @@ You may only use the following libraries: <br/>
 <sys/stat.h> <br/>
 
 
-_main_
-**Input Parameters**: int argc, char* argv[] (description of command line arguments can be found [here]( https://www.tutorialspoint.com/cprogramming/c_command_line_arguments.htm)
-**Returned Output**: int
-**Functionality**: main uses supplied command line arguments as parameters to a call to launchProcesses.
+_main_ <br/>
+**Input Parameters**: int argc, char* argv[] (description of command line arguments can be found [here]( https://www.tutorialspoint.com/cprogramming/c_command_line_arguments.htm) <br/>
+**Returned Output**: int <br/>
+**Functionality**: main uses supplied command line arguments as parameters to a call to launchProcesses. <br/>
 argv[] should be passed to launchProcesses.
 The return from launchProcesses should be stored and used as the return from main to indicate program success or failure.
 
-Note: this function does not need to worry about checking number of arguments but it should be able to execute an argument with parameters (such as _ls -la_). 
-It should simply call the auxillary function and pass it a the argv array that can be used to run a basic execvp command.
+ <br/>Note: this function does not need to worry about checking number of arguments but it should be able to execute an argument with parameters (such as _ls -la_). 
+It should simply call the auxillary function and pass it a the argv array that can be used to run a basic execvp command. <br/>
 
 _launchProcesses_
 
-**Input Parameters**: char*[]
+**Input Parameters**: char*[] <br/>
 
-**Returned Output**: int
+**Returned Output**: int <br/>
 
-**Functionality**: launchProcesses uses execvp (https://linux.die.net/man/3/execvp) to execute a provided command as a process. 
+**Functionality**: launchProcesses uses execvp (https://linux.die.net/man/3/execvp) to execute a provided command as a process.  <br/>
 
 This function should parse the command line input from the user that was passed in as a parameter
 This function should fork (https://linux.die.net/man/3/fork) a child process for the provided argument.
@@ -45,11 +45,11 @@ Then execvp (https://linux.die.net/man/3/execvp) should be provided the command 
 See General Directions if you don't know what portion of the char** array is the argument and what is the command.
 The return from execvp ((https://linux.die.net/man/3/execvp)) should be stored to check for errors. 
 Finally, after checking for errors, wait (https://linux.die.net/man/3/wait) should be used to wait for the process executed by execvp ((https://linux.die.net/man/3/execvp)) to finish before the parent process can move on.
-If the process successfully executes and forks without error, return 0. Otherwise return 1.
+If the process successfully executes and forks without error, return 0. Otherwise return 1. <br/>
 
 **Edge Cases:** If a process is not successfully forked, your function should print ``fork failed!"
 
-Hint: execvp returns -1 if it wasn't successful.
+Hint: execvp returns -1 if it wasn't successful. <br/>
 
 # Part 2, Process Scheduling
 **Background**
