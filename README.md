@@ -65,7 +65,7 @@ _launchProcesses_
 
 **Functionality**: launchProcesses uses execvp (https://linux.die.net/man/3/execvp) to execute a provided command as a process.  <br/>
 
-This function should parse the command line input from the user that was passed in as a parameter
+This function should parse the command line input from the user that was passed in as a parameter.
 This function should fork (https://linux.die.net/man/3/fork) a child process for the provided argument.
 The fork should be checked to see if the child process was successfully created (see below). 
 Then execvp (https://linux.die.net/man/3/execvp) should be provided the command from the user that was passed into the funciton (_ls_) and any associated arguments (_ls -la_).
