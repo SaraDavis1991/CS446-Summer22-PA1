@@ -98,7 +98,7 @@ The are both used in operating systems to determine CPU usage efficiency. <br/>
 
  **Directions**
 
-The code for this portion should be written in **Python** (trust me, it's easier than C). There is a test batchfile for this assignment [here](https://webcampus.unr.edu/courses/83846/files/folder/ProgrammingAssignments/Assignment_1?preview=9548429). Each line of the batchfile contains 4 comma separated values. They are: PID, Arrival Time, Burst Time (also known as execution time), and Priority. PID is the process id. Arrival time is the time since the process arrived in the ready queue. Burst time is the amount of time required to fully execute the process on the CPU. Priority should only be used by the priority scheduling algorithm, and it decides which process should run first if more than one process arrives at the same time. Let's look at a simplified example of the batchfile:
+The code for this portion should be written in **Python** (trust me, it's easier than C). There is a test batchfile for this assignment located in the repo. Each line of the batchfile contains 4 comma separated values. They are: PID, Arrival Time, Burst Time (also known as execution time), and Priority. PID is the process id. Arrival time is the time since the process arrived in the ready queue. Burst time is the amount of time required to fully execute the process on the CPU. Priority should only be used by the priority scheduling algorithm, and it decides which process should run first if more than one process arrives at the same time. Let's look at a simplified example of the batchfile:
  
 ```
 1, 0, 20, 2
@@ -240,7 +240,7 @@ Note that the test batch file for grading will be different than the supplied ba
 You do not need to actually create processes to implement these algorithms. You are simply deciding the order that processes would execute in, then outputting that, the average turnaround time, and the average wait time. <br/>
 All file input and output should be performed in main. Nothing should be printed from the process sorting functions, or the averageWait or averageTurnaround functions. <br/>
 
- **To Submit**
+ **To Submit**<br/>
  When you are done, you should use git to git push the following to your assignment repo (see instructions above):
  1) _commandLauncher.c_
  2) _commandLauncher_ (your executable must have this name and be submitted)
