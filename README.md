@@ -128,16 +128,30 @@ _main()_<br/>
 
 From the terminal, the user should be able to enter the program name batchfile Name and type of process sort they would like to do. 
 So for example: python3 batchSchedulingComparison.py batchfile.txt Priority could be entered on the commandline when you want to run the program. 
-If the user does not enter your three arguments (program name batchfileName and sortType), then you should prompt the user repeatedly and take their input until they enter the correct number of arguments. 
+If the user does not enter your three arguments (program name batchfileName and sortType), then you should return 1 for failure print the following:
+ 
+ ```
+ Please provide command line arguments when running.
+ python3 batchSchedulingComparison.py batchfile.txt Priority
+ ```
+ 
 There are many ways to accomplish this check. You will likely want to _import sys_ and use sys.argv to get all of the arguments given from the command line.
 
 Once the user supplies the correct number of arguments (which you can get by taking the length of the sys.argv list, see link above),  
 use argv to get the batch file name, and then read all of the data from it, if you can. If you can't (because the user entered a non-existent file name),
-you should tell the user that the file doesn't exist and exit the program.
+you should return 1, and print the following:
+```
+ Input batchfile not found!
+ ```
+ 
 If you're able to read from the file name provided by the user (again there are many ways to do this, but I like using _readlines()_), then you should get the algorithm name from the argv list. 
 Expected algorithm names supplied by the user are and ShortestRemaining and Priority (with that exact spelling and capitalization). 
-If the user does not provide one of these arguments, you should tell the user that their process scheduling options are ShortestRemaining, or Priority, and exit the program. 
-If the user enters an acceptable algorithm name, perform a logical check to see which function you should call ( or ShortestRemaining or PrioritySort). Call the appropriate algorithm, which returns a list of process execution times and sorted (by algorithm) PIDs. Call ComputeStats to get the average wait time and average turnaround time. 
+If the user does not provide one of these arguments, you should return 1 and output the following:
+ ```
+ Unidentified sorting algorithm. Please input either ShortestRemaining or Priority.
+ ```
+ 
+If the user enters an acceptable algorithm name, perform a logical check to see which function you should call ( ShortestRemaining or PrioritySort). Call the appropriate algorithm, which returns a list of process execution times and sorted (by algorithm) PIDs. Call ComputeStats to get the average wait time and average turnaround time. 
 For each algorithm, the output to the terminal should be the processes in the order that they should execute (each on their own line), the average process waiting time, and the average process turn around time, each on their own line. 
 All input and output should be gathered and executed IN MAIN.  In other words, your reading and printing should happen here. 
 Examples of output for each algorithm are below, but please make sure that you print from main. 
