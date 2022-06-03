@@ -52,7 +52,7 @@ You may only use the following libraries: <br/>
 
 
 _main_ <br/>
-**Input Parameters**: int argc, char* argv[] (description of command line arguments can be found [here]( https://www.tutorialspoint.com/cprogramming/c_command_line_arguments.htm) <br/>
+**Input Parameters**: int argc, char* argv[] (description of command line arguments can be found [here]( https://www.tutorialspoint.com/cprogramming/c_command_line_arguments.htm)) <br/>
 **Returned Output**: int <br/>
 **Functionality**: main uses supplied command line arguments as parameters to a call to launchProcesses. <br/>
 argv[] should be passed to launchProcesses.
