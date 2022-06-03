@@ -61,14 +61,10 @@ The return from launchProcesses should be stored and used as the return from mai
  <br/>Note: this function does not need to worry about checking number of arguments but it should be able to execute an argument with parameters (such as _ls -la_). 
 It should simply call the auxillary function and pass it the argv array that can be used to run a basic execvp command. <br/>
 
-_launchProcesses_
-
-**Input Parameters**: char*[] 
-
-**Returned Output**: int 
-
-**Functionality**: launchProcesses uses [execvp](https://linux.die.net/man/3/execvp) to execute a provided command as a process.  
-
+_launchProcesses_<br/>
+**Input Parameters**: char*[] <br/>
+**Returned Output**: int <br/>
+**Functionality**: launchProcesses uses [execvp](https://linux.die.net/man/3/execvp) to execute a provided command as a process.  <br/>
 This function should parse the command line input from the user that was passed in as a parameter.
 This function should [fork](https://linux.die.net/man/3/fork) a child process for the provided argument.
 The fork should be checked to see if the child process was successfully created (see below). 
