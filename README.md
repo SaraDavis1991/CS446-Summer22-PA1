@@ -122,7 +122,7 @@ There are many ways to sort in python, so pick whatever makes the most sense to 
 
 Note: you will only use the priority entry in the batchfile to implement PriorityScheduling.
 
-_main()_
+_main()_<br/>
 
 From the terminal, the user should be able to enter the program name batchfile Name and type of process sort they would like to do. 
 So for example: python3 batchSchedulingComparison.py batchfile.txt Priority could be entered on the commandline when you want to run the program. 
@@ -142,7 +142,7 @@ Examples of output for each algorithm are below, but please make sure that you p
 The easiest way to do that is to have each of the algorithm functions return a list of the times that each process is completed at.
 Then you can pass that and the relevant data to ComputeStats, whose returns can be used to print the turnaround and wait times.
 
-_ComputeStat(processCompletionTimes, processArrivalTimes, processBurstTimes)_
+_ComputeStat(processCompletionTimes, processArrivalTimes, processBurstTimes)_<br/>
 **Parameters**: accepts the time that the process would be completed at by the algorithm, accepts the time that each process arrives (I suggest using two lists)
 
 **Returns**: (1)the average turnaround, (2)a list of each process turnaround times, (3)the average wait time and (4)a list of each process wait times (note: Python will let you return multiple values at once. For ease of implementation, you should do that in this function)
@@ -153,7 +153,7 @@ Turnaround time is calculated by subtracting each processArrivalTime from its pr
 
 Wait time is calculated by subtracting each processBurstTime from its processTurnaroundTime. For example, using FCFS, we previously calculated that process 3 has a turnaround time of 70, and process 1 has a turnaround time of 20. To calculate the waitTime for process 3, we subtract the burst time from the turnaround (70-50) and get 20; doing the same for process 1, we get 0. To calculate the average, sum each process' wait time, and divide by the number of processes. So if we only executed process 1 and 3, we would add 20 and 0, and divide by 2- the wait time of those two processes averaged (ignoring the rest of the list for simplicity) is 10.
 
-_ShortestRemainingSort(batchFileData)_
+_ShortestRemainingSort(batchFileData)_<br/>
 
 **Parameters**: accepts all of the batchFileData from the batchfile opened in main
 
@@ -193,7 +193,7 @@ Average Process Wait Time: 13.5
 
 
 
-PrioritySort(batchFileData)
+_PrioritySort(batchFileData)_ <br/>
 
 Parameters: accepts all of the batchFileData from the batchfile opened in main
 
