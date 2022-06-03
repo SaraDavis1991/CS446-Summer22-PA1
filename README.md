@@ -44,6 +44,7 @@ The purpose of this portion of the assignment is to show you how Unix processes 
 In other words, I'm asking you to write a very stripped down process API. Here's a pretty good resource if you're [stuck](https://www.section.io/engineering-education/fork-in-c-programming-language/) <br/>
 
 You may only use the following libraries: <br/>
+ ```
 <stdio.h> 
 <string.h> 
 <stdlib.h> 
@@ -53,7 +54,7 @@ You may only use the following libraries: <br/>
 <fcntl.h> 
 <errno.h> 
 <sys/stat.h> 
-
+```
 
 _main_ <br/>
 **Input Parameters**: int argc, char* argv[] (description of command line arguments can be found [here]( https://www.tutorialspoint.com/cprogramming/c_command_line_arguments.htm)) <br/>
@@ -99,10 +100,10 @@ The are both used in operating systems to determine CPU usage efficiency. <br/>
 The code for this portion should be written in **Python** (trust me, it's easier than C). There is a test batchfile for this assignment [here](https://webcampus.unr.edu/courses/83846/files/folder/ProgrammingAssignments/Assignment_1?preview=9548429). Each line of the batchfile contains 4 comma separated values. They are: PID, Arrival Time, Burst Time (also known as execution time), and Priority. PID is the process id. Arrival time is the time since the process arrived in the ready queue. Burst time is the amount of time required to fully execute the process on the CPU. Priority should only be used by the priority scheduling algorithm, and it decides which process should run first if more than one process arrives at the same time. Let's look at a simplified example of the batchfile:
  
 ```
-1, 0, 20, 2<br/>
-3, 0, 50, 1<br/>
-7, 9,  4, 3<br/>
-2, 10, 12, 4<br/>
+1, 0, 20, 2
+3, 0, 50, 1
+7, 9,  4, 3
+2, 10, 12, 4
 ```
 
 Your program should consist of 4 functions: Main, ShortestRemainingSort, PrioritySort, ComputeStat. [Please note that the way Python implements main is different than the way that C or C++ implements it](https://www.geeksforgeeks.org/python-main-function/). Below, I provide the general description of each of the functions. You will notice that these descriptions are much less comprehensive than the first assignment. This is because I would like you to begin working on implementing algorithms from a general description (much like you would in an interview).
