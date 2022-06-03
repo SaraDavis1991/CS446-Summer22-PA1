@@ -93,7 +93,8 @@ Understanding how Shortest Remaining Job, and Priority Scheduling work will give
 _Waiting time_ measures the amount of time from when a process enters a queue to when the process is executed. 
 _Turn around time_ measures the amount of time from when a process enters a queue to when the process is terminated.
 The are both used in operating systems to determine CPU usage efficiency. <br/>
-**Directions**
+
+ **Directions**
 
 The code for this portion should be written in **Python** (trust me, it's easier than C). There is a test batchfile for this assignment [here](https://webcampus.unr.edu/courses/83846/files/folder/ProgrammingAssignments/Assignment_1?preview=9548429). Each line of the batchfile contains 4 comma separated values. They are: PID, Arrival Time, Burst Time (also known as execution time), and Priority. PID is the process id. Arrival time is the time since the process arrived in the ready queue. Burst time is the amount of time required to fully execute the process on the CPU. Priority should only be used by the priority scheduling algorithm, and it decides which process should run first if more than one process arrives at the same time. Let's look at a simplified example of the batchfile:
  
