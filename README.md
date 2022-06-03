@@ -59,7 +59,7 @@ argv[] should be passed to launchProcesses.
 The return from launchProcesses should be stored and used as the return from main to indicate program success or failure.
 
  <br/>Note: this function does not need to worry about checking number of arguments but it should be able to execute an argument with parameters (such as _ls -la_). 
-It should simply call the auxillary function and pass it a the argv array that can be used to run a basic execvp command. <br/>
+It should simply call the auxillary function and pass it the argv array that can be used to run a basic execvp command. <br/>
 
 _launchProcesses_
 
