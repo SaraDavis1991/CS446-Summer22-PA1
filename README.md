@@ -88,23 +88,20 @@ Process scheduling algorithms come in many different variations, and they have m
 Understanding how First Come First Served, Shortest Remaining Job, and Priority Scheduling work will give you a better understanding of the ways in which these algorithms differ. 
 _Waiting time_ measures the amount of time from when a process enters a queue to when the process is executed. 
 _Turn around time_ measures the amount of time from when a process enters a queue to when the process is terminated.
-The are both used in operating systems to determine CPU usage efficiency. 
+The are both used in operating systems to determine CPU usage efficiency. <br/>
 **Directions**
 
-There is a test batchfile for this assignment here() Each line of the batchfile contains 4 comma separated values. They are: PID, Arrival Time, Burst Time (also known as execution time), and Priority. PID is the process id. Arrival time is the time since the process arrived in the ready queue. Burst time is the amount of time required to fully execute the process on the CPU. Priority should only be used by the priority scheduling algorithm, and it decides which process should run first if more than one process arrives at the same time. Let's look at a simplified example of the batchfile:
+The code for this portion should be written in **Python** (trust me, it's easier than C). There is a test batchfile for this assignment [here](https://webcampus.unr.edu/courses/83846/files/folder/ProgrammingAssignments/Assignment_1?preview=9548429). Each line of the batchfile contains 4 comma separated values. They are: PID, Arrival Time, Burst Time (also known as execution time), and Priority. PID is the process id. Arrival time is the time since the process arrived in the ready queue. Burst time is the amount of time required to fully execute the process on the CPU. Priority should only be used by the priority scheduling algorithm, and it decides which process should run first if more than one process arrives at the same time. Let's look at a simplified example of the batchfile:
 
-1, 0, 20, 2
-
-3, 0, 50, 1
-
-7, 9, 4, 3
-
-2, 10, 12, 4
+1, 0, 20, 2<br/>
+3, 0, 50, 1<br/>
+7, 9,  4, 3<br/>
+2, 10, 12, 4<br/>
 
 
-Your program should consist of at least 5 functions: Main, FirstComeFirstServedSort, ShortestJobRemainingSort, PrioritySort, ComputeStat. Please note that the way Python implements main is different than the way that C or C++ implements it. Below, I provide the general description of each of the functions. You will notice that these descriptions are much less comprehensive than the first assignment. This is because I would like you to begin working on implementing algorithms from a general description (much like you would in an interview).
+Your program should consist of 4 functions: Main, ShortestRemainingSort, PrioritySort, ComputeStat. [Please note that the way Python implements main is different than the way that C or C++ implements it](https://www.geeksforgeeks.org/python-main-function/). Below, I provide the general description of each of the functions. You will notice that these descriptions are much less comprehensive than the first assignment. This is because I would like you to begin working on implementing algorithms from a general description (much like you would in an interview).
 
-Name your program batchSchedulingComparison.py 
+Name your program _batchSchedulingComparison.py _
 
 You can implement sorting in many ways in Python: you can take your data and create a tuple (or other object) and sort a list of those objects, 
 you can zip, sort and unzip lists, you can create parallel lists and sort (not recommended since mistakes with this method are common), etc. 
