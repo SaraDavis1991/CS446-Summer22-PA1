@@ -121,7 +121,7 @@ There are many ways to sort in python, so pick whatever makes the most sense to 
 
 
 
-Note: you will only use the priority entry in the batchfile to implement PriorityScheduling.
+Note: you will only use the priority entry in the batchfile to implement PriorityScheduling.<br/>
 
 _main()_<br/>
 
@@ -141,7 +141,7 @@ For each algorithm, the output to the terminal should be the processes in the or
 All input and output should be gathered and executed IN MAIN.  In other words, your reading and printing should happen here. 
 Examples of output for each algorithm are below, but please make sure that you print from main. 
 The easiest way to do that is to have each of the algorithm functions return a list of the times that each process is completed at.
-Then you can pass that and the relevant data to ComputeStats, whose returns can be used to print the turnaround and wait times.
+Then you can pass that and the relevant data to ComputeStats, whose returns can be used to print the turnaround and wait times.<br/>
 
 _ComputeStat(processCompletionTimes, processArrivalTimes, processBurstTimes)_<br/>
 **Parameters**: accepts the time that the process would be completed at by the algorithm, accepts the time that each process arrives (I suggest using two lists)
@@ -152,7 +152,7 @@ This function calculates your average turnaround time and average wait time stat
  
 Turnaround time is calculated by subtracting each processArrivalTime from its processCompletionTime. For example, using FCFS process 3 takes 50 seconds to execute and arrived at time 0, so process 3 has a turnaround time of 70 because it has to wait 20 seconds for process 1 to fully execute. To calculate the average, sum each process' turnaround time, and divide by the number of processes. So if we only executed process 1 and 3, we would add 20 and 70 and divide by 2- the turnaround time of those two processes averaged (ignoring the rest of the list for simplicity) is 45.
 
-Wait time is calculated by subtracting each processBurstTime from its processTurnaroundTime. For example, using FCFS, we previously calculated that process 3 has a turnaround time of 70, and process 1 has a turnaround time of 20. To calculate the waitTime for process 3, we subtract the burst time from the turnaround (70-50) and get 20; doing the same for process 1, we get 0. To calculate the average, sum each process' wait time, and divide by the number of processes. So if we only executed process 1 and 3, we would add 20 and 0, and divide by 2- the wait time of those two processes averaged (ignoring the rest of the list for simplicity) is 10.
+Wait time is calculated by subtracting each processBurstTime from its processTurnaroundTime. For example, using FCFS, we previously calculated that process 3 has a turnaround time of 70, and process 1 has a turnaround time of 20. To calculate the waitTime for process 3, we subtract the burst time from the turnaround (70-50) and get 20; doing the same for process 1, we get 0. To calculate the average, sum each process' wait time, and divide by the number of processes. So if we only executed process 1 and 3, we would add 20 and 0, and divide by 2- the wait time of those two processes averaged (ignoring the rest of the list for simplicity) is 10.<br/>
 
 _ShortestRemainingSort(batchFileData)_<br/>
 
