@@ -38,7 +38,7 @@ _chmod_ is the command, _u+x _is an argument and <filename> is an argument. Not 
 6) Execute the command (with applicable parameters).<br/>
 
 **General Directions** <br/>
-Name your program _commandLauncher.c_ and your executable _commandLauncher_ . You will turn in the C code **and** and executable. **Failure to do so will result in a 0 on this portion.** In this part of the assignment, you will write a function called _launchProcesses_ in the **C language**. Main() will parse your command line arguments (such as _ls_), and then pass them to _launchProcesses_.
+Name your program _commandLauncher.c_ and your executable _commandLauncher_ . You will turn in the C code **and** executable. **Failure to do so will result in a 0 on this portion.** In this part of the assignment, you will write a function called _launchProcesses_ in the **C language**. Main() will parse your command line arguments (such as _ls_), and then pass them to _launchProcesses_.
 
 The purpose of this portion of the assignment is to show you how Unix processes system calls from the command line using fork, wait, and execvp.
 In other words, I'm asking you to write a very stripped down process API. Here's a pretty good resource if you're [stuck](https://www.section.io/engineering-education/fork-in-c-programming-language/) <br/>
