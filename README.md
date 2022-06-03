@@ -44,15 +44,15 @@ The purpose of this portion of the assignment is to show you how Unix processes 
 In other words, I'm asking you to write a very stripped down process API. Here's a pretty good resource if you're [stuck](https://www.section.io/engineering-education/fork-in-c-programming-language/) <br/>
 
 You may only use the following libraries: <br/>
-<stdio.h> <br/>
-<string.h> <br/>
-<stdlib.h> <br/>
-<sys/wait.h> <br/>
-<sys/types.h> <br/>
-<unistd.h> <br/>
-<fcntl.h> <br/>
-<errno.h> <br/>
-<sys/stat.h> <br/>
+<stdio.h> 
+<string.h> 
+<stdlib.h> 
+<sys/wait.h> 
+<sys/types.h> 
+<unistd.h> 
+<fcntl.h> 
+<errno.h> 
+<sys/stat.h> 
 
 
 _main_ <br/>
