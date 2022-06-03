@@ -153,7 +153,7 @@ Turnaround time is calculated by subtracting each processArrivalTime from its pr
 
 Wait time is calculated by subtracting each processBurstTime from its processTurnaroundTime. For example, using FCFS, we previously calculated that process 3 has a turnaround time of 70, and process 1 has a turnaround time of 20. To calculate the waitTime for process 3, we subtract the burst time from the turnaround (70-50) and get 20; doing the same for process 1, we get 0. To calculate the average, sum each process' wait time, and divide by the number of processes. So if we only executed process 1 and 3, we would add 20 and 0, and divide by 2- the wait time of those two processes averaged (ignoring the rest of the list for simplicity) is 10.
 
-_ShortestRemaining(batchFileData)_
+_ShortestRemainingSort(batchFileData)_
 
 **Parameters**: accepts all of the batchFileData from the batchfile opened in main
 
