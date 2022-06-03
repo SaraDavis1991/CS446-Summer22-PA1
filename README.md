@@ -70,12 +70,12 @@ _launchProcesses_
 **Functionality**: launchProcesses uses [execvp](https://linux.die.net/man/3/execvp) to execute a provided command as a process.  <br/>
 
 This function should parse the command line input from the user that was passed in as a parameter.
-This function should [fork] (https://linux.die.net/man/3/fork) a child process for the provided argument.
+This function should [fork](https://linux.die.net/man/3/fork) a child process for the provided argument.
 The fork should be checked to see if the child process was successfully created (see below). 
-Then execvp (https://linux.die.net/man/3/execvp) should be provided the command from the user that was passed into the funciton (_ls_) and any associated arguments (_ls -la_).
+Then [execvp](https://linux.die.net/man/3/execvp) should be provided the command from the user that was passed into the funciton (_ls_) and any associated arguments (_ls -la_).
 See General Directions if you don't know what portion of the char** array is the argument and what is the command.
-The return from [execvp] (https://linux.die.net/man/3/execvp) should be stored to check for errors. 
-Finally, after checking for errors, [wait] (https://linux.die.net/man/3/wait) should be used to wait for the process executed by [execvp] ((https://linux.die.net/man/3/execvp)) to finish before the parent process can move on.
+The return from [execvp](https://linux.die.net/man/3/execvp) should be stored to check for errors. 
+Finally, after checking for errors, [wait](https://linux.die.net/man/3/wait) should be used to wait for the process executed by [execvp](https://linux.die.net/man/3/execvp) to finish before the parent process can move on.
 If the process successfully executes and forks without error, return 0. Otherwise return 1. <br/>
 
 **Edge Cases:** If a process is not successfully forked, your function should print _fork failed!_
