@@ -3,8 +3,8 @@
 **General Instructions and Hints**: 
 
 -Name files exactly as described in the documentation below.<br/> 
--All functions should match the assignment descriptions. Do not add parameters, change names, or return different values. 
--All output should match exactly what is in this document. If it does not match, it will not pass the autograder.
+-All functions should match the assignment descriptions. Do not add parameters, change names, or return different values. <br/> 
+-All output should match exactly what is in this document. If it does not match, it will not pass the autograder.<br/> 
 -When parts 1 and 2 are done, zip or tarball the specified files into a folder with the name <netid>_CS446_PA1.zip or  <netid>_CS446_PA1.tar.gz (for example sarad_CS446_PA1.tar.gz).<br/>
 -All work should be done on a machine where you have sudoer permission. <br/>
 -All work should be your own. <br/>
